@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
-import { QUERIES, COLORS, WEIGHTS } from '../../constants';
 
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
@@ -43,9 +42,9 @@ const CloseButton = styled(UnstyledButton)`
 `
 
 const NavLink = styled.a`
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-size: 1;
-  font-weight: ${WEIGHTS.medium};
+  font-weight: var(--font-weight-medium);
   text-decoration: none;
   font-size: 1.125rem;
   taxt-transform: uppercase;
